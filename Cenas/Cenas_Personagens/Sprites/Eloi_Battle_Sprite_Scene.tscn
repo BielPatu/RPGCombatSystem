@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv37jj576d8pf"]
+
+[ext_resource type="Texture2D" uid="uid://e1bkntxgpnmd" path="res://Sprites/Eloi_Battle_Sprite.jpg" id="1_prjc5"]
+
+[node name="EloiBattleSpriteScene" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_prjc5")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctewfjmg8llbt"]
+
+[ext_resource type="Script" uid="uid://db2ck5no00ehk" path="res://skill.gd" id="1_68wqf"]
+
+[node name="Skill" type="Button"]
+text = "Vazio"
+script = ExtResource("1_68wqf")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

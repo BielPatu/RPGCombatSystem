@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1dg36oc32pl3"]
+
+[ext_resource type="Texture2D" uid="uid://dilqw7opaptmj" path="res://Sprites/file.png" id="1_jt3w8"]
+[ext_resource type="Script" uid="uid://brye13pqnsw0e" path="res://Personagens_Scripts/EloiCharacter.gd" id="2_52o2x"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jt3w8")
+script = ExtResource("2_52o2x")

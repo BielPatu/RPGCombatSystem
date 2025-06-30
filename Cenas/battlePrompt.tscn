@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://civil33s34swi"]
+
+[ext_resource type="Texture2D" uid="uid://brwajeqh0vhfr" path="res://Sprites/Marina_26H%29.webp" id="1_afrih"]
+
+[node name="Label" type="Label"]
+visibility_layer = 3
+offset_right = 229.0
+offset_bottom = 23.0
+text = "Sou apenas alguém que falará os status effects para você."
+autowrap_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(125, -126)
+texture = ExtResource("1_afrih")

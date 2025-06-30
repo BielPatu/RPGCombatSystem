@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxges38bvfah6"]
+
+[ext_resource type="Script" uid="uid://cr4nagx0b4di2" path="res://Entidades/battle_scene.gd" id="1_7f05c"]
+[ext_resource type="Script" uid="uid://5lac7dw7yagf" path="res://Cenas/skill_controller.gd" id="2_dtptb"]
+
+[node name="BattleController" type="Node2D"]
+script = ExtResource("1_7f05c")
+
+[node name="skill_controller" type="Node2D" parent="."]
+script = ExtResource("2_dtptb")
+
+[node name="player_lifeBar" type="ProgressBar" parent="."]
+offset_left = 6.0
+offset_top = 432.0
+offset_right = 549.0
+offset_bottom = 459.0
+
+[node name="player_name" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 357.0
+offset_right = 82.0
+offset_bottom = 380.0
+scale = Vector2(3, 3)
+
+[node name="player_skill_grid" type="GridContainer" parent="."]
+offset_left = 173.0
+offset_top = 506.0
+offset_right = 261.0
+offset_bottom = 556.0
+scale = Vector2(2, 2)
+columns = 2
+
+[node name="prompt" type="Marker2D" parent="."]
+position = Vector2(577, 555)
+
+[node name="player_sprite" type="Sprite2D" parent="."]
+position = Vector2(276, 300)
