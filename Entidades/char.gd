@@ -11,6 +11,7 @@ var char_life_slider: ProgressBar
 var char_max_life: int
 var char_life: int
 
+var char_critical_blow: int
 var char_damage: int
 var char_level: int
 
@@ -22,7 +23,8 @@ var skill_set: Array
 
 func _init(Life: int, MaxLife: int, DMG: int, defense: int,
 		   level: int, image: Texture2D, skillMove: Array, skillSet: Array,
-		   labelName: Label, progressBar: ProgressBar, evasion: int) -> void:
+		   labelName: Label, progressBar: ProgressBar, evasion: int,
+		   criticalHit: int) -> void:
 	char_life = Life
 	char_max_life = MaxLife
 	char_damage = DMG
@@ -34,6 +36,7 @@ func _init(Life: int, MaxLife: int, DMG: int, defense: int,
 	char_label_name = labelName
 	char_life_slider = progressBar
 	char_evasion = evasion
+	char_critical_blow = criticalHit
 
 func take_damage(damage: int, target: Char):
 	pass

@@ -9,8 +9,7 @@ func _init() -> void:
 	skill_chance = 95
 	
 	
-func activate(user, target, value) -> void:
-	target.char_life -= value
+
 	
 
 	

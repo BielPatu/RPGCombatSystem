@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dffhf3ur5jka5"]
+
+[ext_resource type="Script" uid="uid://5lufccefgsjy" path="res://Cenas/damage_number.gd" id="1_iwtet"]
+
+[node name="Label" type="Label"]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(3, 3)
+text = "VAZIO"
+script = ExtResource("1_iwtet")

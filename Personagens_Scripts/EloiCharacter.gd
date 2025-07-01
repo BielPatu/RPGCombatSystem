@@ -14,6 +14,7 @@ func _init() -> void:
 	learnable_skill_moves = SkillDB
 	skill_set = []
 	char_character_image = preload("res://Sprites/Eloi_Battle_Sprite.jpg") as Texture2D
+	char_critical_blow = 99
 	
 	
 func _ready() -> void:

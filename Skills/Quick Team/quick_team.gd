@@ -9,4 +9,9 @@ func _init() -> void:
 	
 	
 func activate(user, target, value):
-	user.char_evasion += value	
+	if SkillBuffCheck() == false:
+		if precisionTest(skill_chance) == true:
+			user.char_evasion += value
+			is_skill_buff_active = true	
+	else:
+		pass	
