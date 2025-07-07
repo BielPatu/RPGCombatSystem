@@ -3,7 +3,7 @@
 
 # RPGCombatSystem
 
-##Objective
+## Objective
 
 **RPGCombatSystem** is a fully functional RPG framework built in **Godot**, designed to be reused across multiple RPG projects.
 
