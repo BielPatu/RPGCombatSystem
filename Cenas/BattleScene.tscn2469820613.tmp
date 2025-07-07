@@ -1,12 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxges38bvfah6"]
+[gd_scene load_steps=8 format=3 uid="uid://bxges38bvfah6"]
 
 [ext_resource type="Script" uid="uid://cr4nagx0b4di2" path="res://Entidades/battle_scene.gd" id="1_7f05c"]
 [ext_resource type="Script" uid="uid://5lac7dw7yagf" path="res://Entidades/skill_controller.gd" id="2_dtptb"]
 [ext_resource type="Script" uid="uid://b37h4b06o6tao" path="res://Entidades/UnitLifeBar.gd" id="3_ye1u2"]
 [ext_resource type="FontFile" uid="uid://dggm0dvjsotgv" path="res://Fonts/ithaca-font/Ithaca-LVB75.ttf" id="4_mlg6v"]
 [ext_resource type="Texture2D" uid="uid://c1nrxulagpg07" path="res://Sprites/Battle_Menu.png" id="4_nr770"]
-[ext_resource type="Script" uid="uid://xfhsbf5mpsro" path="res://Entidades/ability_button.gd" id="5_51dik"]
-[ext_resource type="Script" uid="uid://b03scpwihqlbr" path="res://Entidades/basic_attack_button.gd" id="5_w5vrw"]
+[ext_resource type="Script" uid="uid://xfhsbf5mpsro" path="res://Cenas/ability_button.gd" id="5_51dik"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mlg6v"]
 bg_color = Color(1, 0.0199041, 0.116812, 1)
@@ -106,21 +105,20 @@ offset_bottom = 184.0
 scale = Vector2(2, 2)
 metadata/_edit_lock_ = true
 
-[node name="BasicAttackButton" type="Button" parent="player_menu"]
+[node name="Button4" type="Button" parent="player_menu"]
 layout_mode = 2
 text = "Ataque B."
-script = ExtResource("5_w5vrw")
 
 [node name="AbilityToggleButton" type="Button" parent="player_menu"]
 layout_mode = 2
 text = "Habilidades"
 script = ExtResource("5_51dik")
 
-[node name="InventoryButton" type="Button" parent="player_menu"]
+[node name="Button2" type="Button" parent="player_menu"]
 layout_mode = 2
 text = "Itens"
 
-[node name="EquipmentButton" type="Button" parent="player_menu"]
+[node name="Button" type="Button" parent="player_menu"]
 layout_mode = 2
 text = "Equipamento"
 
@@ -171,5 +169,4 @@ scale = Vector2(1.06435, 0.275463)
 texture = ExtResource("4_nr770")
 metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="player_menu/BasicAttackButton" to="player_menu/BasicAttackButton" method="_on_pressed"]
 [connection signal="pressed" from="player_menu/AbilityToggleButton" to="player_menu/AbilityToggleButton" method="_on_pressed"]

@@ -1,17 +1,19 @@
 extends Char
 
-var SkillDB = [preload("res://Skills/Tackle/tackle.gd"), preload("res://Skills/Enduring/enduring.gd"), preload("res://Skills/Quick Team/quick_team.gd")]
+var SkillDB = [preload("res://Skills/Tackle/tackle.gd")]
 
 func _init() -> void:
 	char_name = "Pedro Cabloco"
-	char_damage = 15
-	char_defense = 55
+	char_damage = 6
+	char_defense = 15
 	char_life = 400
 	char_max_life = 400
-	char_level = 5
+	char_level = 1
 	learnable_skill_moves = SkillDB
 	skill_set = []
 	char_character_image = preload("res://Sprites/Pedro_Battle_Sprite.jpg") as Texture2D
+	char_type = "playable_ally"
+	char_critical_blow = 12
 
 
 func _ready() -> void:

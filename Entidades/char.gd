@@ -14,12 +14,17 @@ var char_life: int
 var char_critical_blow: int
 var char_damage: int
 var char_level: int
+var char_type: String
 
 var char_defense: int
 var char_evasion: int
 
 var learnable_skill_moves: Array
 var skill_set: Array
+var is_char_crumpled: bool
+var is_char_poisoned: bool
+var is_char_vinasAffected: bool
+var char_status_effects: Array
 
 func _init(Life: int, MaxLife: int, DMG: int, defense: int,
 		   level: int, image: Texture2D, skillMove: Array, skillSet: Array,

@@ -6,15 +6,16 @@ var SkillDB = [preload("res://Skills/Tackle/tackle.gd"), preload("res://Skills/E
 
 func _init() -> void:
 	char_name = "Eloi"
-	char_damage = 5
-	char_defense = 25
+	char_damage = 3
+	char_defense = 15
 	char_life = 200
 	char_max_life = 200
 	char_level = 1
 	learnable_skill_moves = SkillDB
 	skill_set = []
 	char_character_image = preload("res://Sprites/Eloi_Battle_Sprite.jpg") as Texture2D
-	char_critical_blow = 99
+	char_critical_blow = 10
+	char_type = "playable_ally"
 	
 	
 func _ready() -> void:

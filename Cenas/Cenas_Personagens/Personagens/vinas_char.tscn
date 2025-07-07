@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c58gagsgpwnvh"]
+
+[ext_resource type="Script" uid="uid://batmu6gtjtpje" path="res://Personagens_Scripts/vinas_char.gd" id="1_pxei5"]
+
+[node name="Vinas_char" type="Node2D"]
+script = ExtResource("1_pxei5")

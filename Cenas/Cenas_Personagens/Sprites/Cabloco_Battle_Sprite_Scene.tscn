@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b1dg36oc32pl3"]
 
-[ext_resource type="Texture2D" uid="uid://dilqw7opaptmj" path="res://Sprites/Pedro_Battle_Sprite.png" id="1_jt3w8"]
-[ext_resource type="Script" uid="uid://brye13pqnsw0e" path="res://Personagens_Scripts/EloiCharacter.gd" id="2_52o2x"]
+[ext_resource type="Texture2D" path="res://Sprites/Pedro_Battle_Sprite.png" id="1_jt3w8"]
+[ext_resource type="Script" uid="uid://brye13pqnsw0e" path="res://Personagens_Scripts/eloi_char.gd" id="2_52o2x"]
 
 [node name="Node2D" type="Node2D"]
 

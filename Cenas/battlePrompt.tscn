@@ -1,15 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://civil33s34swi"]
+[gd_scene load_steps=4 format=3 uid="uid://civil33s34swi"]
 
-[ext_resource type="Texture2D" uid="uid://brwajeqh0vhfr" path="res://Sprites/Marina_26H%29.webp" id="1_afrih"]
+[ext_resource type="Script" uid="uid://cfv10cpqa5tgj" path="res://Entidades/battle_prompt.gd" id="1_pum6y"]
+[ext_resource type="FontFile" uid="uid://dggm0dvjsotgv" path="res://Fonts/ithaca-font/Ithaca-LVB75.ttf" id="1_sj5u3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hey5q"]
+bg_color = Color(0.0768358, 0.0768358, 0.0768358, 0.611765)
 
 [node name="Label" type="Label"]
 visibility_layer = 3
-offset_right = 229.0
-offset_bottom = 23.0
+offset_right = 189.0
+offset_bottom = 65.0
+scale = Vector2(3, 3)
+theme_override_fonts/font = ExtResource("1_sj5u3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hey5q")
 text = "Sou apenas alguém que falará os status effects para você."
 autowrap_mode = 3
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-show_behind_parent = true
-position = Vector2(125, -126)
-texture = ExtResource("1_afrih")
+script = ExtResource("1_pum6y")

@@ -1,0 +1,124 @@
+[gd_scene load_steps=8 format=3 uid="uid://bxges38bvfah6"]
+
+[ext_resource type="Script" uid="uid://cr4nagx0b4di2" path="res://Entidades/battle_scene.gd" id="1_7f05c"]
+[ext_resource type="Script" uid="uid://5lac7dw7yagf" path="res://Entidades/skill_controller.gd" id="2_dtptb"]
+[ext_resource type="Script" uid="uid://b37h4b06o6tao" path="res://Entidades/UnitLifeBar.gd" id="3_ye1u2"]
+[ext_resource type="FontFile" uid="uid://dggm0dvjsotgv" path="res://Fonts/ithaca-font/Ithaca-LVB75.ttf" id="4_mlg6v"]
+[ext_resource type="Texture2D" uid="uid://c1nrxulagpg07" path="res://Sprites/Battle_Menu.png" id="4_nr770"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nr770"]
+bg_color = Color(0.61115, 0, 0.167515, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mlg6v"]
+bg_color = Color(1, 0.0199041, 0.116812, 1)
+
+[node name="BattleController" type="Node2D"]
+script = ExtResource("1_7f05c")
+
+[node name="skill_controller" type="Node2D" parent="."]
+script = ExtResource("2_dtptb")
+
+[node name="player_life_bar_shadow" type="ProgressBar" parent="."]
+offset_left = 239.0
+offset_top = 375.0
+offset_right = 788.0
+offset_bottom = 409.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_nr770")
+step = 10.0
+value = 100.0
+show_percentage = false
+script = ExtResource("3_ye1u2")
+metadata/_edit_lock_ = true
+
+[node name="player_lifeBar" type="ProgressBar" parent="."]
+offset_left = 248.0
+offset_top = 371.0
+offset_right = 791.0
+offset_bottom = 398.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_mlg6v")
+step = 0.1
+value = 100.0
+script = ExtResource("3_ye1u2")
+
+[node name="ally_name3" type="Label" parent="."]
+offset_left = 5310.0
+offset_top = 16380.0
+offset_right = 5339.0
+offset_bottom = 16394.0
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("4_mlg6v")
+text = "VAZIO"
+
+[node name="ally_name2" type="Label" parent="."]
+offset_left = 2950.0
+offset_top = 9100.0
+offset_right = 2979.0
+offset_bottom = 9114.0
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("4_mlg6v")
+text = "VAZIO"
+
+[node name="ally_name" type="Label" parent="."]
+offset_left = 590.0
+offset_top = 1820.0
+offset_right = 619.0
+offset_bottom = 1834.0
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("4_mlg6v")
+text = "VAZIO"
+
+[node name="player_name" type="Label" parent="."]
+offset_left = 118.0
+offset_top = 364.0
+offset_right = 147.0
+offset_bottom = 378.0
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("4_mlg6v")
+text = "VAZIO"
+
+[node name="player_skill_grid" type="GridContainer" parent="."]
+offset_left = 241.0
+offset_top = 419.0
+offset_right = 329.0
+offset_bottom = 469.0
+scale = Vector2(2, 2)
+columns = 2
+
+[node name="ally_sprite3" type="Sprite2D" parent="."]
+position = Vector2(1284, 1242)
+
+[node name="ally_sprite2" type="Sprite2D" parent="."]
+position = Vector2(856, 828)
+
+[node name="ally_sprite" type="Sprite2D" parent="."]
+position = Vector2(428, 414)
+
+[node name="player_sprite" type="Sprite2D" parent="."]
+position = Vector2(214, 207)
+
+[node name="prompt" type="Marker2D" parent="."]
+position = Vector2(515, 409)
+
+[node name="enemy_lifeBar" type="ProgressBar" parent="."]
+offset_left = 599.0
+offset_top = 10.0
+offset_right = 1142.0
+offset_bottom = 37.0
+script = ExtResource("3_ye1u2")
+
+[node name="enemy_sprite" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(975, 172)
+
+[node name="playerFloatingDamage" type="Marker2D" parent="."]
+position = Vector2(318, 353)
+
+[node name="enemyFloatingDamage" type="Marker2D" parent="."]
+position = Vector2(628, 164)
+
+[node name="battle_menu" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(576, 490)
+scale = Vector2(1.06435, 0.275463)
+texture = ExtResource("4_nr770")
+metadata/_edit_lock_ = true
