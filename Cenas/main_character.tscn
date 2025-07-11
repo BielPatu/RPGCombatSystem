@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1dvli45u4f3v"]
+
+[ext_resource type="Script" uid="uid://1ypuc3btprl0" path="res://Entidades/OverwoldEntitys/main_character_movement_script.gd" id="1_uvxui"]
+[ext_resource type="Texture2D" uid="uid://cdaes3xqt2stq" path="res://icon.svg" id="2_l2yxo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kx2gb"]
+
+[node name="MainCharacter" type="CharacterBody2D"]
+script = ExtResource("1_uvxui")
+
+[node name="MainCharacterCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kx2gb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_l2yxo")

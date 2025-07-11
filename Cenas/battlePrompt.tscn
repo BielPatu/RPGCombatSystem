@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://civil33s34swi"]
 
-[ext_resource type="Script" uid="uid://cfv10cpqa5tgj" path="res://Entidades/battle_prompt.gd" id="1_pum6y"]
+[ext_resource type="Script" uid="uid://cfv10cpqa5tgj" path="res://Entidades/Battle_Entitys/battle_prompt.gd" id="1_pum6y"]
 [ext_resource type="FontFile" uid="uid://dggm0dvjsotgv" path="res://Fonts/ithaca-font/Ithaca-LVB75.ttf" id="1_sj5u3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hey5q"]

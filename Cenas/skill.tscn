@@ -1,12 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctewfjmg8llbt"]
+[gd_scene load_steps=2 format=3 uid="uid://cscg2glvbca1n"]
 
-[ext_resource type="FontFile" uid="uid://dggm0dvjsotgv" path="res://Fonts/ithaca-font/Ithaca-LVB75.ttf" id="1_1cmoe"]
 [ext_resource type="Script" uid="uid://db2ck5no00ehk" path="res://skill.gd" id="1_68wqf"]
 
-[node name="Skill" type="Button"]
-scale = Vector2(4, 4)
-theme_override_fonts/font = ExtResource("1_1cmoe")
-text = "Vazio"
+[node name="skill" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
 script = ExtResource("1_68wqf")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

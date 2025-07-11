@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cwlcqc2wua3bp"]
 
-[ext_resource type="Script" uid="uid://brye13pqnsw0e" path="res://Personagens_Scripts/eloi_char.gd" id="1_ips0t"]
+[ext_resource type="Script" uid="uid://brye13pqnsw0e" path="res://Personagens_Scripts/PersonagemBattleInfo/eloi_char.gd" id="1_ips0t"]
 
 [node name="EloiChar" type="Node2D"]
 script = ExtResource("1_ips0t")

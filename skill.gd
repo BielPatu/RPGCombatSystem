@@ -34,5 +34,4 @@ func _on_pressed() -> void:
 func damageVerifier(unit, targetBeforeDamage, targetAfterDamage) -> void:
 	var calc = targetBeforeDamage - targetAfterDamage
 	if targetAfterDamage < targetBeforeDamage:
-		battle_controller.instantiateFloatingDamage(calc, unit)
 		battle_controller.UpdateValues(unit, calc)
